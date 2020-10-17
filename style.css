@@ -1,0 +1,65 @@
+/*
+Theme Name: Dafunda Template
+Theme URI: www.dafunda.com
+Author: MiccaJR
+*/
+
+div.scrollmenu {
+	background-color: #333;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+div.scrollmenu a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+	background-color: #777;
+}
+
+/* General */
+.main {
+	margin-top: 60px;
+	position: absolute; 
+	top: 0; 
+}
+
+
+/* Flex */
+.flex {
+	height: 70px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap; 
+	overflow: hidden;
+	position: fixed;
+}
+.flex:hover {
+	overflow: auto;
+}
+
+.flex-item {
+	top: 0; 
+	flex: 0 0 auto;
+	margin: 10px;
+}
+
+.btn-tag {
+	background: transparent; 
+	border: 1px; 
+	border-radius: 20px; 
+	padding: 5px; 
+	padding-left: 10px;
+	padding-right: 10px;
+	outline:none;
+	font-size: 1.12vw;
+}
+body {
+	overflow-x: hidden;
+}
