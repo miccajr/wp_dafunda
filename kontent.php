@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="image/dafunda-fav.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<title>Dafunda.com - Media Geek dan Pop Culture Terbaik di Indonesia</title>
+	<!-- Template Main CSS File -->
+	<link href="/css/main.css" rel="stylesheet">
+
+</head>
+<style type="text/css">
+	
+
+	/* General */
+	.main {
+		width: 100%;
+	}
+
+	.item {
+		border: 2px solid #B85B14;
+		width: 120px;
+	}
+
+
+	/* Flex */
+	.flex {
+		display: flex;
+		flex-wrap: nowrap; 
+		overflow: hidden;
+		height: 60px;
+	}
+
+	.flex:hover {
+		overflow: auto;
+		overflow-y: hidden; /* Hide vertical scrollbar */
+	}
+
+	.flex-item {
+		flex: 0 0 auto;
+		margin-top: 5px;
+	}
+
+	.btn-tag {
+		border-radius: 20px;
+		background: transparent;
+		margin: 10px;
+		font-size: 1.19vw;
+		color: black;
+		padding: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 1.11vw;
+	}
+
+	.btn-tag:focus {
+		outline: 0;
+	}
+
+	.sidebar {
+		width: 25%;
+		height: 55vh; // experiment with this value, try changing to 110vh
+		min-height: 200px;
+		overflow: auto;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 10%;
+	}
+
+	.kat-kontent {
+		color: black;
+		text-decoration: none;
+	}
+
+	.breadcrumb {
+		background-color: transparent;
+	}
+
+	body {
+		overflow-x: hidden; /* Hide horizontal scrollbar */
+	}
+</style>
+<body>
+	<!-- Header -->
+	<div class="fixed-top border" style="width: 100%; background: white; height: 10.7%;">
+		<nav class="navbar navbar-expand-lg navbar-light" style="padding-top: 0.85%; margin-left: 83px;">
+			<a class="navbar-brand" href="#">
+				<img src="image/dafunda-header.png" style="width: 100%; height: auto;">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: Segoe UI; float: left;">
+				<ul class="navbar-nav mr-auto">				
+					<li class="nav-item dropdown" style="margin-right: 20px;">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black; font-size: 1.4vw; font-weight: 900;">
+							#HOME
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item font-weight-bold" href="#" style="font-size: 0.95vw;">TENTANG KAMI</a>
+							<a class="dropdown-item font-weight-bold" href="#" style="font-size: 0.95vw;">KEBIJAKAN PRIVASI</a>
+							<a class="dropdown-item font-weight-bold" href="#" style="font-size: 0.95vw;">KETENTUAN LAYANAN</a>
+							<a class="dropdown-item font-weight-bold" href="#" style="font-size: 0.95vw;">KONTAK & ALAMAT</a>
+							<a class="dropdown-item font-weight-bold" href="#" style="font-size: 0.95vw;">PASANG IKLAN</a>
+							<a class="dropdown-item font-weight-bold" href="#" style="font-size: 0.95vw;">F.A.Q</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" style="color: black; font-size: 1.4vw; font-weight: 700;">Games</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" style="color: black; font-size: 1.4vw; font-weight: 700;">Movies</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" style="color: black; font-size: 1.4vw; font-weight: 700;">Komik</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" style="color: black; font-size: 1.4vw; font-weight: 700;">Tv</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" style="color: black; font-size: 1.4vw; font-weight: 700;">AniManga</a>
+					</li>
+				</ul>
+				<button class="font-weight-bold" style="background-color: #ecf0f1; font-size: 0.6vw; border-radius: 20px; padding: 10px; border: transparent; margin-right: 20px; outline: none;">MODE MALAM</button>
+				<button style="background: transparent; margin-right: 10px; border: transparent;"><i class="fas fa-share-alt"></i></button>
+				<button style="border: transparent; border-radius: 20px; padding: 5px; padding-right: 10px; padding-left: 10px; margin-right: 83px; outline: none;"><i class="fas fa-search"></i></button>
+			</div><br>
+		</nav>
+	</div>
+	<!-- End Header -->
+
+	<!-- Tag Header -->
+	<div class="main">
+		<div class="flex" style="margin-top: 6%;">
+			<div class="flex-item"><a href="#Pop" class="border btn-tag"><b style="font-weight: 800;">#</b> Pop Culture</a></div>
+			<div class="flex-item"><a href="#Dafunda Game" class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda Game</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda Movie</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda TV</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda Komik</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda Tekno</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda Otaku</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda Viral</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda Musik</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda eSports</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda Cara</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Dafunda Gadget</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Gamedaim</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> CaraGame.id</a></div>
+			<div class="flex-item"><a class="border btn-tag"><b style="font-weight: 800;">#</b> Wowkia Media</a></div>
+		</div>
+	</div>
+	<!-- End Tag Header -->
+
+	<!-- Content -->
+	<div class="container">
+		<nav aria-label="breadcrumb" style="font-size: 0.8vw; position: static; left: 0; text-align: left;">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="kat-kontent" href="#">Home</a></li>
+				<li class="breadcrumb-item"><a class="kat-kontent" href="#">Movie</a></li>
+				<li class="breadcrumb-item active" aria-current="page" style="color: #929597;">Bad Genius 2 Dikabarkan Ak...</li>
+			</ol>
+		</nav>
+		<div class="row no-gutters">
+			<div class="col-12 col-sm-6 col-md-8">
+				<span class="font-weight-bold" style="font-size: 3vw; line-height: 1.1em;">
+					Bad Genius 2 Dikabarkan Akan Dirilis Tahun 2020!!
+				</span><hr>
+				<div class="font-weight-bold" style="font-size: 0.8vw;">#MOVIE / </div><hr>			
+				<img src="image/miccajr.jpg" style="border-radius: 50%; width: 5%; height: auto; top: 0; float: left; margin-left: 2%;">
+				<span class="font-weight-normal" style="font-size: 0.8vw; color: #c4c4c2; float: left; padding-left: 1%;">oleh 
+					<span style="color: black;">Micca JR
+					</span><br>sekitar 2 jam yang lalu
+				</span>
+				<div style="margin-top: 10%;">					
+					<img src="image/news1.jpg" style="width: 100%; height: auto; border-radius: 5px; margin-right: 2%;">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 font-weight-bold" style="font-size: 1.4vw; letter-spacing: 1px;">TERBARU DI #MOVIES</div>
+		</div>
+	</div>
+	<!-- End Content -->
+
+	<!-- Footer -->
+	<div style="width: 100%; font-size: 2vw; text-align: center; margin-bottom: 1%;">
+		<a href="https://www.facebook.com/dafundacom/" target="_blank" style="color: black; margin: 10px;"><i class="fab fa-facebook"></i></a>
+		<a href="https://twitter.com/dafundacom/" target="_blank" style="color: black; margin: 10px;"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.instagram.com/dafundacom/" target="_blank" style="color: black; margin: 10px;"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.instagram.com/dafundacom/" target="_blank" style="color: black; margin: 10px;"><i class="fab fa-youtube"></i></a>
+	</div>
+	<div style="background: #314559; color: white; width: 100%; bottom: 0; padding: 3%; padding-left: 6%; padding-right: 8%;">
+		<div class="row" style="margin-bottom: 20px; font-size: 1.2em;">
+			<div class="col-sm">
+				<img src="image/dafunda-footer.png" style="width: 40%;"><br>
+			</div>
+			<div class="col-sm font-weight-bold" style="letter-spacing: 1px;">
+				MASIH HANGAT
+			</div>
+			<div class="col-sm font-weight-bold" style="letter-spacing: 1px;">
+				TOPIK POPULER
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+				<span style="font-size: 1.15em;"><b>Dafunda.com – Media Geek & Pop-Culture Indonesia</b> adalah situs yang membahas tentang budaya paling populer saat ini. Seperti Budaya Teknologi, Movies, Gaming, dan juga Otaku.<br><br>Untuk menyapa atau bekerjasama:<br>Email: <b>Info@dafunda.com</b></span>
+			</div>
+			<div class="col-sm">
+				<div class="font-weight-bold" style="margin-top: 3%; left: 0; border-radius: 5px; margin-bottom: 50px;">
+					<img src="image/news1.jpg" style="width: 30%; border-radius: 5px; float: left; margin-right: 2%;">
+					<span style="font-size: 1vw;">Bad Genius 2 Dikabarkan Akan Dirilis Tahun 2020!!
+					</span>
+				</div>
+				<div class="font-weight-bold" style="margin-top: 3%; left: 0; border-radius: 5px; margin-bottom: 50px;">
+					<img src="image/news2.jpg" style="width: 30%; border-radius: 5px; float: left; margin-right: 2%;">
+					<span style="font-size: 1vw;">Film Alita mendapatkan Reward Hollywood!!
+					</span>
+				</div>
+				<div class="font-weight-bold" style="margin-top: 3%; left: 0; border-radius: 5px; margin-bottom: 50px;">
+					<img src="image/news3.jpg" style="width: 30%; border-radius: 5px; float: left; margin-right: 2%;">
+					<span style="font-size: 1vw;">Violet Evergarden Resmi Mendapatkan Movie Ke-2nya!!
+					</span>
+				</div>
+			</div>
+			<div class="col-sm" style="font-size: 0.9vw; overflow: scroll; height: 300px; overflow-x: hidden;">
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Android</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Anime</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Apple</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Avengers: Endgame</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Avengers: Infinity War</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Capcom</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Covid-19</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#DC</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Disney</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Epic Games</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Facebook</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Fortnite</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Free Fire</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Free Force</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Google</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Infinity War</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Instagram</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Jepang</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Joker</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Marvel</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Marvel Cinematic Universe</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Marvel Comics</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Marvel Studios</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Microsoft</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Mobile Legends</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Netflix</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#One Piece</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Otaku</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#PC</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Playstation 4</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#PS4</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#PUBG Mobile</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Samsung</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Smartphone</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Smartphone Android</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Sony</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Spiderman</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Steam</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Tips Free Fire</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Ubisoft</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Warner Bros</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#WhatsApp</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Xbox One</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Xiomi</a>
+				<a href="#" type="button" style="border-radius: 20px; background-color: #505f6f; padding: 0.5%; padding-left: 10px; padding-right: 10px; color: white; text-decoration: none; margin: 1%;">#Youtube</a>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-between" style="background-color: #354868; color: white; padding-left: 6%; padding-right: 6%; padding-top: 1%;">
+		<div class="col">				
+			<span style="font-size: 0.8em; float: left;">
+				© Copyright 2015 - 2020 — Dafunda Media. All Rights Reserved.
+			</span>
+		</div>
+		<div class="col">
+			<span style="font-size: 0.8em; float: right;">
+				<span style="margin-right: 15px;">TENTANG KAMI</span>
+				<span style="margin-right: 15px;">KONTAK & ALAMAT</span>
+				<span style="margin-right: 15px;">KODE ETIK</span>
+				<span style="margin-right: 15px;">ADVERTISE</span>
+				<span style="margin-right: 15px;">PRIVACY</span>
+				<span style="margin-right: 15px;">TOS</span>
+			</span>
+		</div>
+	</div>
+	<div class="text-center" style="background-color: #354868; color: white; padding-left: 6%; padding-right: 6%; padding-top: 1%; font-size: 0.8em; margin-bottom: 20px;">
+		<img src="image/Dafunda-logo-white.png" style="width: 3%; height: auto; margin-bottom: 5px;"><br>
+		Dafunda Media
+	</div>
+	<!-- End Footer -->
+
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
